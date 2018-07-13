@@ -1,0 +1,1 @@
+0.0752048 = Reading time ,6.91189 = Model training time ,0.000138044 = Time to calculate the objective ,0 = Epsilon at convergence ,26752800 = Convergence iteration ,52.4801 = Norm of solution ,0.356207 = avg Loss of solution ,0.152948 = avg zero-one error of solution ,0.357013 = primal objective of solution

@@ -1,0 +1,337 @@
+
+
+
+network.node
+model file and train file are saved in: /projects/academic/haimonti/Pegasos4/dsvm/peersim-pegasos/data/reuters
+Number of nodes is ####### 10
+getTrainingData
+0.059329 = Reading time
+2.38419e-05 = Model training time
+0.000169992 = Time to calculate the objective
+1.0193 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.519299 = avg Loss of solution
+0.389961 = avg zero-one error of solution
+1.0193 = primal objective of solution
+
+0.0562971 = Reading time
+2.86102e-06 = Model training time
+0.000200033 = Time to calculate the objective
+1.01037 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.510368 = avg Loss of solution
+0.301158 = avg zero-one error of solution
+1.01037 = primal objective of solution
+
+0.0565779 = Reading time
+6.91414e-06 = Model training time
+0.000180006 = Time to calculate the objective
+1.01545 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.515448 = avg Loss of solution
+0.163449 = avg zero-one error of solution
+1.01545 = primal objective of solution
+
+0.0585339 = Reading time
+1.90735e-06 = Model training time
+0.000208855 = Time to calculate the objective
+1.06267 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.562668 = avg Loss of solution
+0.441441 = avg zero-one error of solution
+1.06267 = primal objective of solution
+
+0.0582471 = Reading time
+2.86102e-06 = Model training time
+0.000197172 = Time to calculate the objective
+1.25228 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.752284 = avg Loss of solution
+0.487773 = avg zero-one error of solution
+1.25228 = primal objective of solution
+
+0.0561039 = Reading time
+3.09944e-06 = Model training time
+0.0002141 = Time to calculate the objective
+0.971011 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.471011 = avg Loss of solution
+0.330759 = avg zero-one error of solution
+0.971011 = primal objective of solution
+
+0.056392 = Reading time
+3.09944e-06 = Model training time
+0.00019908 = Time to calculate the objective
+1.63045 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+1.13045 = avg Loss of solution
+0.221364 = avg zero-one error of solution
+1.63045 = primal objective of solution
+
+0.0605209 = Reading time
+4.05312e-06 = Model training time
+0.000200987 = Time to calculate the objective
+1.38903 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.889028 = avg Loss of solution
+0.118404 = avg zero-one error of solution
+1.38903 = primal objective of solution
+
+0.0610361 = Reading time
+2.86102e-06 = Model training time
+0.000205994 = Time to calculate the objective
+1.24096 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.74096 = avg Loss of solution
+0.144144 = avg zero-one error of solution
+1.24096 = primal objective of solution
+
+0.0558109 = Reading time
+4.05312e-06 = Model training time
+0.000197172 = Time to calculate the objective
+1.11954 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.619536 = avg Loss of solution
+0.310167 = avg zero-one error of solution
+1.11954 = primal objective of solution
+
+0.0566881 = Reading time
+4.05312e-06 = Model training time
+0.000197887 = Time to calculate the objective
+1.36796 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.86796 = avg Loss of solution
+0.113256 = avg zero-one error of solution
+1.36796 = primal objective of solution
+
+0.05847 = Reading time
+5.96046e-06 = Model training time
+0.000334978 = Time to calculate the objective
+1.49902 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.999019 = avg Loss of solution
+0.84556 = avg zero-one error of solution
+1.49902 = primal objective of solution
+
+0.0839522 = Reading time
+5.96046e-06 = Model training time
+0.000195026 = Time to calculate the objective
+1.45616 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.956157 = avg Loss of solution
+0.171171 = avg zero-one error of solution
+1.45616 = primal objective of solution
+
+0.05902 = Reading time
+5.00679e-06 = Model training time
+0.000203848 = Time to calculate the objective
+1.67809 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+1.17809 = avg Loss of solution
+0.105534 = avg zero-one error of solution
+1.67809 = primal objective of solution
+
+0.0613611 = Reading time
+3.09944e-06 = Model training time
+0.00019908 = Time to calculate the objective
+1.02096 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.520964 = avg Loss of solution
+0.20592 = avg zero-one error of solution
+1.02096 = primal objective of solution
+
+0.0578859 = Reading time
+3.09944e-06 = Model training time
+0.000241041 = Time to calculate the objective
+0.963219 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.463219 = avg Loss of solution
+0.120978 = avg zero-one error of solution
+0.963219 = primal objective of solution
+
+0.0563579 = Reading time
+3.09944e-06 = Model training time
+0.000213861 = Time to calculate the objective
+1.28573 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.78573 = avg Loss of solution
+0.239382 = avg zero-one error of solution
+1.28573 = primal objective of solution
+
+0.058152 = Reading time
+3.09944e-06 = Model training time
+0.00018692 = Time to calculate the objective
+1.12464 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.624636 = avg Loss of solution
+0.169884 = avg zero-one error of solution
+1.12464 = primal objective of solution
+
+0.0578101 = Reading time
+4.05312e-06 = Model training time
+0.000205994 = Time to calculate the objective
+1.13468 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.634676 = avg Loss of solution
+0.271557 = avg zero-one error of solution
+1.13468 = primal objective of solution
+
+0.0579269 = Reading time
+3.09944e-06 = Model training time
+0.000198126 = Time to calculate the objective
+1.53209 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+1.03209 = avg Loss of solution
+0.297297 = avg zero-one error of solution
+1.53209 = primal objective of solution
+
+0.0637701 = Reading time
+5.96046e-06 = Model training time
+0.000200033 = Time to calculate the objective
+10.2024 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+9.70237 = avg Loss of solution
+0.924067 = avg zero-one error of solution
+10.2024 = primal objective of solution
+
+0.060709 = Reading time
+2.14577e-06 = Model training time
+0.0001719 = Time to calculate the objective
+1.40826 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.908264 = avg Loss of solution
+0.144144 = avg zero-one error of solution
+1.40826 = primal objective of solution
+
+0.0563831 = Reading time
+4.05312e-06 = Model training time
+0.000196934 = Time to calculate the objective
+0.951289 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.451289 = avg Loss of solution
+0.187902 = avg zero-one error of solution
+0.951289 = primal objective of solution
+
+0.058583 = Reading time
+3.09944e-06 = Model training time
+0.000227928 = Time to calculate the objective
+1.5191 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+1.0191 = avg Loss of solution
+0.274131 = avg zero-one error of solution
+1.5191 = primal objective of solution
+
+0.0568819 = Reading time
+2.14577e-06 = Model training time
+0.000175953 = Time to calculate the objective
+1.85833 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+1.35833 = avg Loss of solution
+0.328185 = avg zero-one error of solution
+1.85833 = primal objective of solution
+
+0.0564179 = Reading time
+5.00679e-06 = Model training time
+0.000189066 = Time to calculate the objective
+1.29402 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.794023 = avg Loss of solution
+0.216216 = avg zero-one error of solution
+1.29402 = primal objective of solution
+
+0.0577211 = Reading time
+4.05312e-06 = Model training time
+0.000206947 = Time to calculate the objective
+1.21618 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.716184 = avg Loss of solution
+0.190476 = avg zero-one error of solution
+1.21618 = primal objective of solution
+
+0.0560491 = Reading time
+3.8147e-06 = Model training time
+0.00023222 = Time to calculate the objective
+1.33081 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.830809 = avg Loss of solution
+0.217503 = avg zero-one error of solution
+1.33081 = primal objective of solution
+
+0.0571029 = Reading time
+2.14577e-06 = Model training time
+0.000231981 = Time to calculate the objective
+1.07248 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.572478 = avg Loss of solution
+0.30888 = avg zero-one error of solution
+1.07248 = primal objective of solution
+
+0.0560851 = Reading time
+3.09944e-06 = Model training time
+0.000200987 = Time to calculate the objective
+0.962346 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.462346 = avg Loss of solution
+0.220077 = avg zero-one error of solution
+0.962346 = primal objective of solution
+
+0.0568962 = Reading time
+1.90735e-06 = Model training time
+0.000293016 = Time to calculate the objective
+1.41346 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.913465 = avg Loss of solution
+0.185328 = avg zero-one error of solution
+1.41346 = primal objective of solution
+
+0.0577631 = Reading time
+3.09944e-06 = Model training time
+0.000192881 = Time to calculate the objective
+1.42824 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.928235 = avg Loss of solution
+0.732304 = avg zero-one error of solution
+1.42824 = primal objective of solution
+
+0.0559771 = Reading time
+3.09944e-06 = Model training time
+0.000221968 = Time to calculate the objective
+0.855358 = Epsilon at convergence
+0 = Convergence iteration
+77519.4 = Norm of solution
+0.355358 = avg Loss of solution
+0.176319 = avg zero-one error of solution
+0.855358 = primal objective of solution
+

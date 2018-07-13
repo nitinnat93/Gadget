@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/Proj/DSVM/!svn/ver/14/jni-pegasos/src/jnipegasos
+END
+LearningParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/Proj/DSVM/!svn/ver/14/jni-pegasos/src/jnipegasos/LearningParameter.java
+END
+JNIPegasosInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/jnipegasos/JNIPegasosInterface.java
+END
+PrimalSVMWeights.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Proj/DSVM/!svn/ver/14/jni-pegasos/src/jnipegasos/PrimalSVMWeights.java
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/jnipegasos/build.xml
+END

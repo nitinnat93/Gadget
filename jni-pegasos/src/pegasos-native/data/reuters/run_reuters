@@ -1,0 +1,3 @@
+la_svm -g 1 -c 1  reuters/money-fx.trn
+la_test reuters/money-fx.tst money-fx.trn.model out
+

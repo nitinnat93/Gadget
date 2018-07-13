@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native
+END
+cmd_option.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/cmd_option.h
+END
+mul.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/mul.cc
+END
+pegasos_jni.cc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/pegasos_jni.cc
+END
+pegasos_jni.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/pegasos_jni.h
+END
+simple_sparse_vec_hash.cc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/simple_sparse_vec_hash.cc
+END
+jnipegasos_JNIPegasosInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/jnipegasos_JNIPegasosInterface.h
+END
+simple_sparse_vec_hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/simple_sparse_vec_hash.h
+END
+test_objective.cc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/test_objective.cc
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/README
+END
+WeightVector.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/WeightVector.cc
+END
+cmd_line.cc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/cmd_line.cc
+END
+WeightVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/WeightVector.h
+END
+cmd_line.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/cmd_line.h
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/license.txt
+END
+pegasos_optimize.cc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/pegasos_optimize.cc
+END
+pegasos_optimize.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/pegasos_optimize.h
+END
+main.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/main.cc
+END
+data.tgz
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/data.tgz
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/src/pegasos-native/Makefile
+END

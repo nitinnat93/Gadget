@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/Proj/DSVM/!svn/ver/14/jni-pegasos
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/.classpath
+END
+JNIPegasosClassifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/JNIPegasosClassifyTest.java
+END
+JNIPegasosTrainTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/JNIPegasosTrainTest.java
+END
+WeightFileReadTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/WeightFileReadTest.java
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/.project
+END
+JNI-Pegasos_train.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/JNI-Pegasos_train.sh
+END
+JNI-Pegasos_test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/JNI-Pegasos_test.sh
+END
+WeightFileRead.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/WeightFileRead.sh
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/Proj/DSVM/!svn/ver/8/jni-pegasos/README
+END
