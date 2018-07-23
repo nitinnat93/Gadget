@@ -122,7 +122,7 @@ int main(int argc, char** argv) {
   // ---------------------- Print Results ------------------------
   // -------------------------------------------------------------
   std::cout << trainTime << " = Time for training\n" 
-	    << calc_obj_time << " = Time for calculate objective\n" 
+	    << calc_obj_time << " = Time for calculating the objective\n" 
 	    << norm_value  << " = Norm of solution\n" 
 	    << loss_value << " = avg Loss of solution\n"  
 	    << zero_one_error  << " = avg zero-one error of solution\n" 

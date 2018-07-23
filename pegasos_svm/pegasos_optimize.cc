@@ -426,8 +426,8 @@ void LearnReturnLast(// Input variables
   
   double startTimePerIter;
   double endTimePerIter;
+  double trainTimePerIter = 0.0;
   double notNeededTime = 0.0;
-  double trainTime = 0.0;
 
 
   // Used for convergence 
@@ -451,9 +451,9 @@ void LearnReturnLast(// Input variables
 
   
     // write the file headers
-  fs << "Iter" << "," << "TrainTime" << ","<<"CalcObjTime" <<"," 
+  fs << "Iter" << "," << "TrainTime" << ","
              << "ObjValuePrevious" << "," << "ObjValue" << "," <<
-             "Epsilon" << "," << "TestLoss" << "," << "TestError" << "TrainTime"
+             "Epsilon" << "," << "TestLoss" << "," << "TestError"
              << std::endl;
  
 
@@ -462,6 +462,7 @@ void LearnReturnLast(// Input variables
   // ---------------- Main Loop -------------------
   for (int i = 0; i < max_iter; ++i) {
     
+    startTimePerIter = get_runtime2();
     
     // Break out of loop if convergence occurs
            if (count == STOP_ITERATIONS){
@@ -529,7 +530,8 @@ void LearnReturnLast(// Input variables
       }
     } // else -- no projection
 
-
+endTimePerIter = get_runtime2();
+trainTimePerIter += diff(startTimePerIter, endTimePerIter);
 
 
 
@@ -600,9 +602,8 @@ void LearnReturnLast(// Input variables
           //std::cout << "TestError:" << test_error << std::endl;
           //Write to csv file 
           //std::cout << "writing iter " << i << "to csv file." << std::endl;
-          fs << i << ',' << obj_value_prev << "," << obj_value << "," <<
-             fabs(epsilon) << "," << test_loss << "," << test_error << "," << train_time << "," << conv_iter
-             << std::endl;
+          fs << i << ',' << trainTimePerIter <<"," << obj_value_prev << "," << obj_value << "," <<
+             fabs(epsilon) << "," << test_loss << "," << test_error << std::endl;
             obj_value_prev = obj_value;
 
             endTimePerIter = get_runtime2();
