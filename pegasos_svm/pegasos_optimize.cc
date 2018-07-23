@@ -417,7 +417,7 @@ void LearnReturnLast(// Input variables
 		      double& test_loss,double& test_error,
 		      // additional parameters
 		      int eta_rule_type , double eta_constant ,
-		      int projection_rule, double projection_constant) {
+		      int projection_rule, double projection_constant, int round_num) {
 
   uint num_examples = Labels.size();
 
@@ -446,9 +446,8 @@ void LearnReturnLast(// Input variables
 
   // create a name for the file output
   
-  std::string filename = model_filename + ".csv";
+  std::string filename = model_filename + "_" + std::to_string(round_num) +  ".csv";
   fs.open(filename.c_str());
-
   
     // write the file headers
   fs << "Iter" << "," << "TrainTime" << ","
@@ -616,7 +615,7 @@ trainTimePerIter += diff(startTimePerIter, endTimePerIter);
 
   }
   endTime = get_runtime2();
-  train_time = diff(startTime, endTime) - notNeededTime;
+  train_time = trainTimePerIter;//diff(startTime, endTime) - notNeededTime;
   
   cout << "Algorithm converged at iteration " << conv_iter << "." << endl;
 
@@ -844,7 +843,7 @@ void run_experiments(std::string& experiments_filename,
 		     res[i].loss_value,res[i].zero_one_error,
 		     res[i].test_loss,res[i].test_error,
 		     v[i].eta_rule,v[i].eta_constant,
-		     v[i].projection_rule,v[i].projection_constant);
+		     v[i].projection_rule,v[i].projection_constant,0);
   }
 
   // print results

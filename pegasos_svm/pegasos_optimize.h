@@ -81,7 +81,7 @@ void LearnReturnLast(// Input variables
 		      double& test_loss,double& test_error,
 		      // additional parameters
 		      int eta_rule_type , double eta_constant ,
-		      int projection_rule, double projection_constant);
+		      int projection_rule, double projection_constant, int round_num);
 
 
 
