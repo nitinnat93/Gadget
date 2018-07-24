@@ -432,16 +432,9 @@ void LearnReturnLast(// Input variables
 
   double startTime = get_runtime2();
   double endTime = get_runtime2();
-  //auto startTime2 = 0;
-  //auto endTime2 = 0;
-  double train_time2 = 0.0;
+
   std::vector<double> timeVec;
-  int count = 0;
-  double EPSILON_VAL = 0.0001;
-  double epsilon = 1000.0;
-  int STOP_ITERATIONS = 10;
-  long conv_iter = 0;
- 
+  
   // Initialization of classification vector
   // If file exists and the replace parameter is true, then load from file.
 
@@ -474,34 +467,10 @@ void LearnReturnLast(// Input variables
     if (cur_loss >= 1.0) zero_one_error += 1.0/num_examples;
   }
 
-/*
-  //Initialize the CSV file
-  ofstream fs;
 
-  // create a name for the file output
-  std::string filename = model_filename + ".csv";
-  fs.open(filename.c_str());
-
-  
-    // write the file headers
-  fs << "Iter" << "," << "TrainTime" << ","<<"CalcObjTime" <<"," 
-             << "ObjValuePrevious" << "," << "ObjValue" << "," <<
-             "Epsilon" << "," << "TestLoss" << "," << "TestError"
-             << std::endl;
-  fs.close();
-  */
   // ---------------- Main Loop -------------------
   for (int i = 0; i < max_iter; ++i) {
         
-
-    
-        if (count == STOP_ITERATIONS){
-         
-          break;
-          //std::cout <<"Breaking from the loop."<<std::endl;
-        }
-
-    double startTime2 = get_runtime2();
 
     // learning rate
     double eta;
@@ -548,104 +517,8 @@ void LearnReturnLast(// Input variables
       W.add(Dataset[grad_index[j]],grad_weights[j]);
     }
 
-/*
-    // Project if needed
-    if (projection_rule == 0) { // Pegasos projection rule
-      double norm2 = W.snorm();
-      if (norm2 > 1.0/lambda) {
-	W.scale(sqrt(1.0/(lambda*norm2)));
-      }
-    } 
-    else if (projection_rule == 1) { // other projection
-      double norm2 = W.snorm();
-      if (norm2 > (projection_constant*projection_constant)) {
-	W.scale(projection_constant/sqrt(norm2));
-      }
-    } 
-*/
-
-    // else -- no projection
- //double endTime2 = get_runtime2();
- //train_time2 = train_time2 + diff(startTime2,endTime2);
-  /*
-  if (max_iter > 1 && i%100 == 0){
-
-    
-          //std::cout << "Filename:" << model_filename << "||";
-          //std::cout << "Iter:" << i <<"||";
-          //std::cout << "TrainTime:" << train_time2 << "||";
-
-            double startTime2 = get_runtime2();
-            // Calculate objective value
-            norm_value = W.snorm();
-            obj_value = norm_value * lambda / 2.0;
-            loss_value = 0.0;
-            zero_one_error = 0.0;
-            for (uint k=0; k < Dataset.size(); ++k) {
-              double cur_loss = 1 - Labels[k]*(W * Dataset[k]); 
-              if (cur_loss < 0.0) cur_loss = 0.0;
-              loss_value += cur_loss/num_examples;
-              obj_value += cur_loss/num_examples;
-              if (cur_loss >= 1.0) zero_one_error += 1.0/num_examples;
-            }
-            double endTime2 = get_runtime2(); //measure time to calculate objective value
-            double calc_obj_time2 = diff(startTime2,endTime2);
-            //std::cout << "CalcObjTime:" << calc_obj_time2 << "||";  
-            //std::cout << "ObjValuePrevious:" << obj_value_prev << "||";
-            //std::cout << "ObjValue:" << obj_value << "||";
-            //std::cout << "Epsilon:" << fabs(obj_value  - obj_value_prev) << "||";
-            
-            epsilon = obj_value - obj_value_prev;
-            
-            
-            if (fabs(epsilon) <= EPSILON_VAL)
-              {
-              //update the counter by 1
-
-                count += 1;
-                conv_iter = i;
-              //std::cout << "Epsilon value is: " << epsilon << " Updating count to " << count <<std::endl;
-              }
-          
-            else
-            {
-              //set the counter back to 0 since we need epsilon to be less than zero consecutively for more than 5 turns
-              count = 0;
-            }
-            
-            
-            // Calculate test_loss and test_error
-            test_loss = 0.0;
-            test_error = 0.0;
-            for (uint k=0; k < testDataset.size(); ++k) {
-
-              double cur_loss = 1 - testLabels[k]*(W * testDataset[k]); 
-              if (cur_loss < 0.0) cur_loss = 0.0;
-              test_loss += cur_loss;
-              if (cur_loss >= 1.0) test_error += 1.0;
-            }
-            if (testDataset.size() != 0) {
-              test_loss /= testDataset.size();
-              test_error /= testDataset.size();
-          }
-          //std::cout << "TestLoss:"  << test_loss << "||";
-          //std::cout << "TestError:" << test_error << std::endl;
-          //Write to csv file 
-          //std::cout << "writing iter " << i << "to csv file." << std::endl;
-          fs << i << "," << train_time2 << ","<< calc_obj_time2 <<"," 
-             << obj_value_prev << "," << obj_value << "," <<
-             fabs(epsilon) << "," << test_loss << "," << test_error
-             << std::endl;
-            obj_value_prev = obj_value;
-
-
-}
-*/
-
-  
 
   }
-  converge_iter = conv_iter;
 
 
   // Calculate objective value
@@ -693,7 +566,6 @@ void LearnReturnLast(// Input variables
 
   }
 
-//fs.close();
 }
 
 
