@@ -2,8 +2,8 @@
 
 
 Requirements for standalone Pegasos:
-C++ compiler - gcc-7.3.0
-GNU Make 3.82
+1. C++ compiler - gcc-7.3.0
+2. GNU Make 3.82
 
 Requirements for Peersim:
 1. gcc-7.3.0
