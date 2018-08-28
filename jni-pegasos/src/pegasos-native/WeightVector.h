@@ -78,6 +78,7 @@ class WeightVector {
   void add(WeightVector& x, double s);
 
   void print(std::ostream& os);
+  void printstd();
 
   double operator[](uint i) {
     if (i < d) return (my_v[i] * my_a);

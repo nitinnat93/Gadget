@@ -35,14 +35,15 @@ int main(int argc, char** argv) {
   double lambda = 1.0;
   int max_iter = 10;
   int exam_per_iter = 1;
-  int replace = 1;
   int iter = 0;
+  int replace;
   //uint num_iter_to_avg = 100;
 
   // parse command line
   learning::cmd_line cmdline;
   cmdline.info("Pegasos algorithm");
   cmdline.add_master_option("<data-file>", &data_filename);
+  cmdline.add("-replace", "replace the model file (default = 1)", &replace, 1);
   cmdline.add("-lambda", "regularization parameter (default = 0.01)", &lambda, 0.001);
   cmdline.add("-iter", "number of iterations (default = 10/lambda)", &max_iter, int(100/lambda));
   cmdline.add("-k", "size of block for stochastic gradient (default = 1)", &exam_per_iter, 1);

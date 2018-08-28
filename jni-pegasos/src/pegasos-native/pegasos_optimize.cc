@@ -106,7 +106,7 @@ void Learn(// Input variables
     // learning rate
     double eta;
     if (eta_rule_type == 0) { // Pegasos eta rule
-      eta = 1 / (lambda * (i+2)); 
+      eta = 1 / (lambda * (i+2));  // STEP 2
     } else if (eta_rule_type == 1) { // Norma rule
       eta = eta_constant / sqrt(i+2);
       // solve numerical problems
@@ -408,25 +408,26 @@ void LearnAndValidate(// Input variables
 
 
 
+
 void LearnReturnLast(// Input variables
-		      std::vector<simple_sparse_vector>& Dataset,
-		      std::vector<int>& Labels,
-		      uint dimension,
-		      std::vector<simple_sparse_vector>& testDataset,
-		      std::vector<int>& testLabels,
-		      double lambda,int max_iter,
-		      int exam_per_iter,
+          std::vector<simple_sparse_vector>& Dataset,
+          std::vector<int>& Labels,
+          uint dimension,
+          std::vector<simple_sparse_vector>& testDataset,
+          std::vector<int>& testLabels,
+          double lambda,int max_iter,
+          int exam_per_iter,
           int replace, int iter,
-		      std::string& model_filename,
-		      // Output variables
-		      double& train_time,double& calc_obj_time,
-		      double& obj_value, double& obj_value_prev, double& norm_value, 
-		      double& loss_value,double& zero_one_error,
-		      double& test_loss,double& test_error,long& converge_iter,
+          std::string& model_filename,
+          // Output variables
+          double& train_time,double& calc_obj_time,
+          double& obj_value, double& obj_value_prev, double& norm_value, 
+          double& loss_value,double& zero_one_error,
+          double& test_loss,double& test_error,long& converge_iter,
           double& epsilonVal, 
-		      // additional parameters
-		      int eta_rule_type , double eta_constant ,
-		      int projection_rule, double projection_constant) {
+          // additional parameters
+          int eta_rule_type , double eta_constant ,
+          int projection_rule, double projection_constant) {
 
   uint num_examples = Labels.size();
 
@@ -437,7 +438,7 @@ void LearnReturnLast(// Input variables
   
   // Initialization of classification vector
   // If file exists and the replace parameter is true, then load from file.
-
+  std::cout << endl <<"THIS IS FOR ITERATION " << iter << endl;
   WeightVector W(dimension);
 
 
@@ -480,7 +481,7 @@ void LearnReturnLast(// Input variables
         eta = eta_constant / sqrt(i+2);
       // solve numerical problems
       //if (projection_rule != 2)
-  	W.make_my_a_one();
+    W.make_my_a_one();
       } else {
         eta = eta_constant;
       }
@@ -493,8 +494,9 @@ void LearnReturnLast(// Input variables
       for (int j=0; j < exam_per_iter; ++j) {
 
         // choose random example
-        uint r = ((int)rand()) % num_examples;
-
+        //uint r = ((int)rand()) % num_examples;
+        uint r = iter % num_examples;
+        cout << endl <<"THE EXAMPLE CHOSEN FOR THIS TURN IS: " <<  r << endl;
         // calculate prediction
         double prediction = W*Dataset[r];
 
@@ -504,8 +506,8 @@ void LearnReturnLast(// Input variables
 
       // and add to the gradient
       if (cur_loss > 0.0) {
-  	grad_index.push_back(r);
-  	grad_weights.push_back(eta*Labels[r]/exam_per_iter);
+    grad_index.push_back(r);
+    grad_weights.push_back(eta*Labels[r]/exam_per_iter);
         }
       }
  
@@ -519,6 +521,7 @@ void LearnReturnLast(// Input variables
 
 
   }
+
 
 
   // Calculate objective value
@@ -562,8 +565,9 @@ void LearnReturnLast(// Input variables
       exit(EXIT_FAILURE);
     }
     W.print(model_file);
-    model_file.close();
 
+    model_file.close();
+   
   }
 
 }
@@ -761,3 +765,28 @@ void run_experiments(std::string& experiments_filename,
 
 }
 */
+
+
+// Adding a function to initialize the weights and store the initial model file.
+
+  void PegasosInitialize(// Input variables
+          uint dimension,
+          std::string& model_filename) {
+         WeightVector W(dimension);
+
+ // finally, print the model to the model_file
+  if (model_filename != "noModelFile") {
+    std::ofstream model_file(model_filename.c_str());
+    if (!model_file.good()) {
+      std::cerr << "error w/ " << model_filename << std::endl;
+      exit(EXIT_FAILURE);
+    }
+    W.print(model_file);
+
+    model_file.close();
+    W.printstd();
+  }
+
+  std::cout << endl << "INITIALIZED THE WEIGHTS AND STORED THEM INTO THE MODELFILE " << model_filename;
+
+}

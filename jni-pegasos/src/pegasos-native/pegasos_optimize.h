@@ -104,6 +104,9 @@ void run_experiments(std::string& experiments_file,
 		     uint dimension,
 		     std::vector<simple_sparse_vector>& testDataset,
 		     std::vector<int>& testLabels);
-
 */
+
+void PegasosInitialize(// input
+	      std::string& model_filename,
+	      uint& dimension);
 #endif

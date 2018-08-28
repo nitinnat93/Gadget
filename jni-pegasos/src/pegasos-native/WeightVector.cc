@@ -43,6 +43,16 @@ void WeightVector::print(std::ostream& os) {
   os << std::endl;
 }
 
+void WeightVector::printstd() {
+  
+  for(uint i=0; i < d; ++i) {
+    if (my_v[i] != 0.0)
+      std::cout << i << ":" << (my_v[i]*my_a) << " "; 
+  }
+  std::cout << std::endl;
+}
+
+
 //--------------------------------------------------------------------------
 double operator* (simple_sparse_vector& u, WeightVector& v) {
   double outcome = 0.0;

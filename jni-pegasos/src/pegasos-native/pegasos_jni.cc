@@ -180,7 +180,7 @@ if(replace == 0){
 vector<float> values = GetLastLine(filename);
 convergence_num = static_cast<int>(values.end()[-2]);
 converged = static_cast<int>(values.end()[-1]);
-std::cout << "Convergence_num: " << convergence_num << " Converged: " << converged;
+//std::cout << "Convergence_num: " << convergence_num << " Converged: " << converged;
 
 // Algorithm to check for convergence
 
@@ -190,18 +190,18 @@ Check for obj_value_prev and obj_value, if
 
 
 if(epsilonVal <= EPSILON_VAL && converged==0){
-  cout << "Incrementing convergence_num by 1.";
+  //cout << "\nEpsilon Val: " << epsilonVal << " .Incrementing convergence_num by 1.";
   convergence_num++;
   if(convergence_num == 10){
     converged=1;
-    cout << "Algorithm converged on this node at iter " << iter;
+    //cout << "Algorithm converged on this node at iter " << iter;
   }
   
 }
 
 if(epsilonVal > EPSILON_VAL && converged==0){
 // reset convergence_num to zero.
-  cout << "Resetting convergence_num to zero.";
+  //cout << "\nEpsilon Val: " << epsilonVal << " .Resetting convergence_num to zero.";
   convergence_num = 0;
 
 }
@@ -225,6 +225,7 @@ else {
   fs << iter<< "," << obj_value << "," << zero_one_error << "," << loss_value << "," << convergence_num << ","<< converged;
 }
 
+  /*
   std::cout << readingTime << " = Reading time\n"
       << trainTime << " = Model training time\n"
       << calc_obj_time << " = Time to calculate the objective\n"
@@ -236,12 +237,12 @@ else {
 	    << obj_value << " = primal objective of solution\n" 
 	    <<  std::endl;
  
-    std::cout <<  std::endl 
-              << "Objective Value after gossip/before training: " << obj_value_prev << std::endl 
-              << "Model file: " << modelFile << std::endl
-              << "Train file: " << dataFile << std::endl 
-              << "Test file: " << testFile << std::endl
-              << "Objective Value after training: " << obj_value << std::endl;
+   
+              */
+ //std::cout <<  std::endl 
+ //             << "Objective Value before training: " << obj_value_prev << std::endl
+ //             << "Objective Value after training: " << obj_value << std::endl;
+              
 /*
     fs << readingTime << " = Reading time " << ','
       << trainTime << " = Model training time " << ','
@@ -250,6 +251,8 @@ else {
       << converge_iter << " = Convergence iteration " << ','
       << norm_value  << " = Norm of solution " << ',' 
       << loss_value << " = avg Loss of solution " << ',' 
+
+
       << zero_one_error  << " = avg zero-one error of solution " << ',' 
       << obj_value << " = primal objective of solution" 
       <<  std::endl;
@@ -324,3 +327,8 @@ JNIEXPORT void JNICALL Java_jnipegasos_JNIPegasosInterface_classify
 	    << "(" << misclassified_count <<"/" << num_examples << ")" << " = number of misclassified examples\n" 
 	    <<  std::endl;
 }
+
+
+
+
+
